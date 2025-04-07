@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 public class Filtro {
-
+/*
     public List<Persona> nombresQueEmpiezanConE(List<Persona> p) {
         List<Persona> resultado = new ArrayList<>();
         for (Persona persona : p) {
@@ -24,7 +24,7 @@ public class Filtro {
             }
         }
         return resultado;
-    }
+    }*/
 
     public List<Persona> filtrar(List<Persona> listaPersonas, Predicate<Persona> p) {
         // Implementacion con un bucle for

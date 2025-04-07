@@ -57,8 +57,8 @@ public class Main {
         miLista.add(p2);
         miLista.add(p3);
 
-        List<Persona> resultado = filtro.filtrar(miLista, (persona) -> persona.nombreComienzaCon('d'));
-        List<Persona> resultado2 = filtro.filtrar(resultado, Persona::nombreEsPar);
+        List<Persona> resultado = filtro.filtrar(miLista, (persona) -> persona.nombre().startsWith("d"));
+        List<Persona> resultado2 = filtro.filtrar(resultado, persona -> persona.nombre().length() % 2 == 0);
 
         resultado2.stream().map(Persona::nombre).forEach(System.out::println);
     }
