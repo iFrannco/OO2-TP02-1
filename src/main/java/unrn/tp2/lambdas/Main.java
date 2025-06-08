@@ -42,9 +42,7 @@ public class Main {
         // Punto 2:
         System.out.println("\nPUNTO 2:");
         a.otroMetodo((n) -> n.length() % 2 == 0);
-        a.otroMetodo((m) -> {
-            return Character.isUpperCase(m.charAt(0));
-        });
+        a.otroMetodo((m) -> Character.isUpperCase(m.charAt(0)));
 
         // Punto 3:
         System.out.println("\nPUNTO 3:");
